@@ -1,0 +1,352 @@
+.wrapper {
+  margin-top: 10rem;
+  /*@if $breakpoint == tab-port {
+    @media only screen and (max-width: 56.25em) {
+      @content;
+    } //900px
+  }*/
+  /*@if $breakpoint == tab-land {
+    @media only screen and (max-width: 75em) {
+      @content;
+    } //1200px
+  }*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .wrapper {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+.wrapper .text-div {
+  position: relative;
+  margin-bottom: 1.5rem;
+  display: table-cell;
+  padding-right: 1.5rem;
+  vertical-align: middle;
+  text-align: left;
+}
+
+.wrapper h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  width: 100%;
+  padding: 0.5rem;
+  color: #2e2e2e;
+}
+
+.wrapper .warning {
+  font-size: 0.7rem;
+  font-weight: 100;
+  white-space: nowrap;
+  color: #acacac;
+  padding-left: 0.6rem;
+  width: 100%;
+}
+
+.wrapper .paragraph {
+  color: #383838;
+  width: 100%;
+  padding: 0.5rem;
+  font-weight: 400;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.mob-photo {
+  width: 19.8rem;
+  height: 37.5rem;
+}
+
+.icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 1rem;
+}
+
+.icons p {
+  color: #1ebea5;
+  font-weight: bold;
+  margin-left: 0.5rem;
+}
+
+.icons .android-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 0.5rem;
+}
+
+.icons .iphone-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 0.5rem;
+}
+
+.icons .computer-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 0.5rem;
+}
+
+.container {
+  margin-bottom: -10rem;
+}
+
+.container .wrapp {
+  margin-bottom: 2rem;
+  /*@if $breakpoint == tab-port {
+    @media only screen and (max-width: 56.25em) {
+      @content;
+    } //900px
+  }*/
+  /*@if $breakpoint == tab-land {
+    @media only screen and (max-width: 75em) {
+      @content;
+    } //1200px
+  }*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .container .wrapp {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.container .wrapp .box-1 {
+  overflow: hidden;
+  position: relative;
+  width: 45rem;
+  height: 48rem;
+  background-color: #d0e9ea;
+  margin: 0.8rem;
+  margin-bottom: 0;
+  /*@if $breakpoint == tab-port {
+    @media only screen and (max-width: 56.25em) {
+      @content;
+    } //900px
+  }*/
+  /*@if $breakpoint == tab-land {
+    @media only screen and (max-width: 75em) {
+      @content;
+    } //1200px
+  }*/
+  /*@if $breakpoint == tab-port {
+    @media only screen and (max-width: 56.25em) {
+      @content;
+    } //900px
+  }*/
+  /*@if $breakpoint == tab-land {
+    @media only screen and (max-width: 75em) {
+      @content;
+    } //1200px
+  }*/
+}
+
+.container .wrapp .box-1 h2 {
+  text-align: center;
+  padding: 2rem;
+  font-weight: 300;
+  padding-top: 4rem;
+  color: #2c2c2c;
+}
+
+.container .wrapp .box-1 p {
+  text-align: center;
+  font-weight: 500;
+  padding: 1rem 3rem 1rem 3rem;
+}
+
+.container .wrapp .box-1 .p-2 {
+  text-align: center;
+  font-weight: 500;
+}
+
+.container .wrapp .box-1 span {
+  color: #06a5a5;
+}
+
+.container .wrapp .box-1 img {
+  width: 21rem;
+  height: 30rem;
+  position: absolute;
+  margin-left: 27%;
+  margin-top: 12%;
+  /*@if $breakpoint == tab-port {
+    @media only screen and (max-width: 56.25em) {
+      @content;
+    } //900px
+  }*/
+  /*@if $breakpoint == tab-land {
+    @media only screen and (max-width: 75em) {
+      @content;
+    } //1200px
+  }*/
+}
+
+@media only screen and (max-width: 37.5em) {
+  .container .wrapp .box-1 img {
+    margin-left: 17%;
+    width: 16rem;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .container .wrapp .box-1 {
+    padding-top: 6rem;
+    position: relative;
+    width: 38rem;
+    margin-left: 0;
+    padding: 6rem 0 0 0;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .container .wrapp .box-1 {
+    width: 24rem;
+  }
+}
+
+.container .wrapp .box-2 {
+  position: relative;
+  width: 45rem;
+  height: 48rem;
+  background-color: #edf8f5;
+  margin: 0.8rem;
+  /*@if $breakpoint == tab-port {
+    @media only screen and (max-width: 56.25em) {
+      @content;
+    } //900px
+  }*/
+  /*@if $breakpoint == tab-land {
+    @media only screen and (max-width: 75em) {
+      @content;
+    } //1200px
+  }*/
+  /*@if $breakpoint == tab-port {
+    @media only screen and (max-width: 56.25em) {
+      @content;
+    } //900px
+  }*/
+  /*@if $breakpoint == tab-land {
+    @media only screen and (max-width: 75em) {
+      @content;
+    } //1200px
+  }*/
+}
+
+.container .wrapp .box-2 .circle {
+  width: 17rem;
+  height: 17rem;
+  margin: 8rem auto;
+  background-color: #77d7c8;
+  border-radius: 100%;
+  margin-bottom: 2.3rem;
+}
+
+.container .wrapp .box-2 h2 {
+  text-align: center;
+  padding: 0.8rem;
+  font-weight: 300;
+  color: #2c2c2c;
+}
+
+.container .wrapp .box-2 .paragraph-1 {
+  text-align: center;
+  color: #6d6d6d;
+  font-size: 0.8rem;
+}
+
+.container .wrapp .box-2 .paragraph-2 {
+  text-align: center;
+  padding: 1rem 3rem 0 3rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .container .wrapp .box-2 {
+    position: relative;
+    width: 38rem;
+    margin-left: 0;
+    padding: 6rem 0 0 0;
+    margin-top: 0;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .container .wrapp .box-2 {
+    width: 24rem;
+  }
+}
+
+.button {
+  border: 2px solid #77d7c8;
+  color: #1cb39b;
+  font-size: 1rem;
+  width: 13rem;
+  height: 2.5rem;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 40px;
+  position: relative;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=container.css.map */

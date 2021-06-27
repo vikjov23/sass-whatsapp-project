@@ -1,0 +1,29 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+}
+
+.header {
+  list-style-type: none;
+}
+
+.header li {
+  font-weight: 600;
+  max-width: 25rem;
+  text-transform: uppercase;
+}
+
+.wrapper p {
+  line-height: 1.8;
+  max-width: 27rem;
+}
+
+.wrapper h2 {
+  font-weight: 500;
+  max-width: 25rem;
+}
+
+.wrapper .text-div {
+  max-width: 30rem;
+}
+/*# sourceMappingURL=typography.css.map */

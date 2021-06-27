@@ -1,0 +1,264 @@
+@import './mixins.scss';
+@import './variables.scss';
+
+
+.wrapper {
+    // position: absolute;
+    // position: relative;
+  
+  margin-top: 10rem;
+
+  @include respond(phone) { 
+
+    display: none;
+    visibility: hidden;
+  }
+  @include flexBox();
+  
+
+
+  .text-div {
+      position: relative;
+     margin-bottom: 1.5rem;
+    //  margin-right: 1rem;
+     display: table-cell;
+    padding-right: 1.5rem;
+    vertical-align: middle;
+    text-align: left;  
+  }
+
+
+
+
+
+   h2 {
+       font-size: 2rem;
+       font-weight: 400;
+       width: 100%;
+       padding: 0.5rem;
+       color: rgb(46, 46, 46);
+      
+      }
+
+
+   .warning {
+       font-size: 0.7rem;
+       font-weight: 100;
+       white-space: nowrap;
+       color: rgb(172, 172, 172);
+       padding-left: 0.6rem;
+        width: 100%;
+  }
+
+   .paragraph {
+     color: rgb(56, 56, 56);
+     width: 100%;
+     padding: 0.5rem;
+     font-weight: 400;
+
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+       }
+}
+
+
+
+  .mob-photo {
+            width: 19.8rem;
+            height: 37.5rem
+}
+
+
+.icons {
+  @include flexCol();
+  margin-top: 1rem;
+    p {
+         color: $primary-color;
+         font-weight: bold;
+         margin-left: 0.5rem;
+       }
+
+  .android-icons {
+      display: flex;
+      flex-direction: row;
+      margin: 0.5rem;
+   
+  }
+
+
+  .iphone-icons {
+      display: flex;
+      flex-direction: row;
+  margin: 0.5rem;
+      
+  }
+
+  .computer-icons {
+           display: flex;
+      flex-direction: row;
+        margin: 0.5rem;
+  }
+
+}
+
+
+
+
+.container {  
+//   position: ;
+//    margin: 5rem;
+   margin-bottom: -10rem;
+  
+      
+  .wrapp { 
+
+        //  margin: 50rem auto;
+         margin-bottom: 2rem;
+
+           @include respond(phone) { 
+
+
+            display: flex;
+            flex-direction: column;
+
+           }
+        
+          @include flexBox();
+       .box-1 {
+               overflow: hidden;  
+          position: relative;
+           width: 45rem;
+           height: 48rem;
+       background-color: #d0e9ea;
+          margin: 0.8rem;
+          margin-bottom: 0;
+
+
+    
+
+           h2 {
+               text-align: center;
+               padding: 2rem;
+               font-weight: 300;
+               padding-top: 4rem;
+               color: rgb(44, 44, 44);
+           }
+           p {
+               text-align: center;
+                font-weight: 500;
+                padding: 1rem 3rem 1rem 3rem;       
+           }
+           .p-2 {
+                text-align: center;
+            //    padding: 3rem;
+                font-weight: 500;
+           }
+           span {
+               color:rgb(6, 165, 165);
+           }
+
+           img {
+               width: 21rem;
+               height: 30rem;
+               position: absolute;
+              margin-left: 27%;
+              margin-top: 12%;
+              @include respond (phone) {
+                  margin-left: 17%;
+                  width: 16rem;
+              }
+            
+           }
+
+                 @include respond (phone) {
+      padding-top: 6rem;
+                position: relative;
+                  width: 38rem;
+                margin-left: 0;
+                padding: 6rem 0 0 0;
+
+
+          } 
+          @include respond (smallPhone) {
+               width: 24rem;
+          }
+
+       }
+
+       .box-2 {
+           position: relative;
+        width: 45rem;
+           height: 48rem;
+              background-color: #edf8f5;
+             margin: 0.8rem;
+
+            
+
+             .circle {
+                 width: 17rem;
+                 height: 17rem;
+                 margin: 8rem auto;
+              background-color: #77d7c8;
+              border-radius: 100%;
+              margin-bottom: 2.3rem;
+             }
+
+             h2 {
+                     text-align: center;
+               padding: 0.8rem;
+               font-weight: 300;
+               
+               color: rgb(44, 44, 44);
+             }
+
+
+             .paragraph-1 {
+                 text-align: center;
+                 color: rgb(109, 109, 109);
+                 font-size: 0.8rem;
+              
+                 
+                //    position: absolute;
+                //    top: 5rem;
+             }
+
+             .paragraph-2 {
+                     text-align: center;
+                     padding: 1rem 3rem 0 3rem;
+                  }
+
+                  
+          @include respond (phone) {
+     
+                position: relative;
+                 width: 38rem;
+                margin-left: 0;
+                padding: 6rem 0 0 0;
+                margin-top: 0;
+          }
+              @include respond (smallPhone) {
+               width: 24rem;
+          }
+     }
+
+  }
+
+}
+
+.button {
+    border: 2px solid #77d7c8;
+    color: #1cb39b;
+    font-size: 1rem;
+    // text-align: center;
+    width: 13rem;
+    height: 2.5rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius:40px;
+    position: relative;
+      margin: 0 auto;
+  
+}
+
+     

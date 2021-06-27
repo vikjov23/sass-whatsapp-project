@@ -1,0 +1,49 @@
+@import './variables.scss';
+
+body {
+  
+    
+        font-family: 'Roboto', sans-serif;
+        text-decoration: none;
+}
+
+
+.header {
+
+
+  
+        list-style-type: none;
+        li {
+            font-weight: 600;
+              max-width: $max-width;
+               text-transform: uppercase;
+
+        }
+
+
+     
+}
+
+
+
+
+
+
+.wrapper {
+     
+
+
+    p {
+        line-height: 1.8;
+        max-width: 27rem;
+    }
+
+     h2 {
+         font-weight: 500;
+             max-width: $max-width;
+     }
+
+     .text-div {
+max-width: 30rem;
+}
+}

@@ -1,0 +1,102 @@
+
+
+@mixin flexBox () {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+@mixin flexCol {
+     display: flex;
+    flex-direction: column;
+}
+
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 37.5em) {
+      // Calculate em px / 16, example 600 / 16 = 37.5
+      @content;
+    } //600px
+  }
+
+
+
+
+  @if $breakpoint == smallPhone {
+    @media only screen and (max-width: 370px) {
+      // Calculate em px / 16, example 600 / 16 = 37.5
+      @content;
+    } //350px
+  }
+
+  @if $breakpoint == smallestPhone {
+    @media only screen and (max-width: 19em) {
+      // Calculate em px / 16, example 600 / 16 = 37.5
+      @content;
+    } //310px
+  }
+
+  @if $breakpoint == overPhone {
+    @media only screen and (min-width: 37.5625em) {
+      @content;
+    } //601px
+  }
+
+  @if $breakpoint == big-phone {
+    @media only screen and (max-width: 45em) {
+      @content;
+    } //730px
+  }
+
+  @if $breakpoint == landscape {
+    @media only screen and (orientation: landscape) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == big-phone-landscape {
+    @media only screen and (min-width: 600px) and (max-height: 500px) {
+      @content;
+    }
+  }
+
+  /*@if $breakpoint == tab-port {
+    @media only screen and (max-width: 56.25em) {
+      @content;
+    } //900px
+  }*/
+
+  /*@if $breakpoint == tab-land {
+    @media only screen and (max-width: 75em) {
+      @content;
+    } //1200px
+  }*/
+
+  @if $breakpoint == laptop {
+    @media only screen and (max-width: 100em) {
+      @content;
+    } //1600px
+  }
+
+  @if $breakpoint == small-laptop {
+    @media only screen and (max-width: 73em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == tablet {
+    @media only screen and (max-width: 51em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == big-desktop {
+    @media only screen and (min-width: 156.25em) {
+      @content;
+    } //2560px
+  }
+}
